@@ -5,7 +5,7 @@
         <input matInput [formControl]="searchForm" placeholder="Ex. ium">
         <mat-error *ngIf="searchForm.invalid">Nur Buchstaben oder Zahlen!</mat-error>
     </mat-form-field>
-    <mat-form-field appearance="standard">
+    <mat-form-field appearance="standard" align="end">
         <mat-label>Favorite food</mat-label>
         <mat-select  (valueChange)="selectedFilter.emit($event)">
             <mat-option *ngFor="let filter of filters" [value]="filter.function">

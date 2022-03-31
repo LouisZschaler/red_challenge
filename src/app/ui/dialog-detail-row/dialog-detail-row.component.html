@@ -1,6 +1,15 @@
-<div class="detail-row">
-  <div class="label">{{ label }}:</div>
-  <div class="value">
-    {{ data }}
-  </div>
-</div>
+<h2 mat-dialog-title>{{ label }}</h2>
+<mat-dialog-content>
+  <mat-list>
+    <mat-list-item *ngFor="let detailRow of detailRows" class="list-item">
+      <div class="label">{{ detailRow.label }}:</div>
+      <div class="value">
+        {{ detailRow.data }}
+      </div>
+    </mat-list-item>
+  </mat-list>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>
