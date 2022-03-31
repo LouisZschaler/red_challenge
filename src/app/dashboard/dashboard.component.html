@@ -1,6 +1,9 @@
 <app-grid-container>
   <div class="content" content>
-    <app-search></app-search>
+    <app-search
+      (searchString)="setQuery($event)"
+      (selectedFilter)="setFilter($event)"
+    ></app-search>
 
     <app-unicorn-table
       [columns]="columns"

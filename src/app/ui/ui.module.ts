@@ -19,32 +19,33 @@ import { CommonModule } from '@angular/common';
 import { GridContainerComponent } from './grid-container/grid-container.component';
 import { UnicornTableComponent } from './unicorn-table/unicorn-table.component';
 import { MatSelectModule } from '@angular/material/select';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatRippleModule } from '@angular/material/core';
 import { DialogDetailRowComponent } from './dialog-detail-row/dialog-detail-row.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 
 @NgModule({
-  imports: [
-    RouterModule,
-    CommonModule,
-    ReactiveFormsModule,
-    MatToolbarModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatIconModule,
-    MatListModule,
-    MatSidenavModule,
-    MatProgressSpinnerModule,
-    CdkLayoutModule,
-    MatButtonModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatCardModule,
-    MatSelectModule,
-    MatRippleModule,
-  ],
+    imports: [
+        RouterModule,
+        CommonModule,
+        ReactiveFormsModule,
+        MatToolbarModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatIconModule,
+        MatListModule,
+        MatSidenavModule,
+        MatProgressSpinnerModule,
+        CdkLayoutModule,
+        MatButtonModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatCardModule,
+        MatSelectModule,
+        MatRippleModule,
+        FormsModule,
+    ],
   declarations: [
     SidenavComponent,
     NavListComponent,
